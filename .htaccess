@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /electronics-webapp/
+
+# Exclude certain file types from rewriting
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|gif)$
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Rewrite job-listing, job-details, candidate details, URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^job-listing/([^/]+)$ job-listing.php?job=$1 [L]
+RewriteRule ^job-details/([^/]+)$ job-details.php?job=$1 [L]
+
+#RewriteRule ^candidate-details/([^/]+)/?$ candidate-details.php?i=$1 [L]
+RewriteRule ^candidate-details/([^/]+)/([^/]+)/?$ candidate-details.php?userid=$1&fullname=$2 [L]
+RewriteRule ^talent-selected/([^/]+)/?$ talent-selected.php?i=$1 [L]
+RewriteRule ^talent/([^/]+)/?$ talent.php?i=$1 [L]
+
+# Rewrite jobs pagination URLs
+RewriteRule ^jobs/(\d+)$ jobs?page=$1 [L]
+
+# Custom error pages
+ErrorDocument 404 /primary-system/error-404.php
+ErrorDocument 500 /primary-system/error-500.php
