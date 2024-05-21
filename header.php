@@ -25,8 +25,28 @@
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .fruite .fruite-item .fruite-img img {
+                height: 200px;
+            }
+            .service-item img {
+                height: 250px;
+                object-fit: cover;
+            }
+            .image-card img,
+            .vesitable-img img {
+                height: 200px;
+            }
+            .fruite .fruite-item:hover {
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+            }
+        </style>
     </head>
 
-    <body></body>
+    <body>

@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
 
 
@@ -24,7 +24,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index" class="navbar-brand"><h1 class="text-primary display-6">ELECTRO</h1></a>
+                    <a href="index" class="navbar-brand"><h1 class="text-primary display-6"><img src="./img/logo.png" width="80" /></h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -32,16 +32,8 @@
                         <div class="navbar-nav mx-auto">
                             <a href="index" class="nav-item nav-link">Home</a>
                             <a href="shop" class="nav-item nav-link">Shop</a>
-                            <a href="shop-detail" class="nav-item nav-link">Shop Detail</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="cart" class="dropdown-item">Cart</a>
-                                    <a href="chackout" class="dropdown-item">Chackout</a>
-                                    <a href="testimonial" class="dropdown-item active">Testimonial</a>
-                                    <!-- <a href="404" class="dropdown-item">404 Page</a> -->
-                                </div>
-                            </div>
+                            <a href="testimonial" class="nav-item nav-link active">Testimonial</a>
+                            <a href="cart" class="nav-item nav-link">Cart</a>
                             <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex m-3 me-0">
@@ -86,7 +78,6 @@
             <h1 class="text-center text-white display-6">Testimonial</h1>
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item active text-white">Testimonial</li>
             </ol>
         </div>
