@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
 
 
@@ -24,7 +24,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index" class="navbar-brand"><h1 class="text-primary display-6">ELECTRO</h1></a>
+                    <a href="index" class="navbar-brand"><h1 class="text-primary display-6"><img src="./img/logo.png" width="80" /></h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -86,7 +86,6 @@
             <h1 class="text-center text-white display-6">404 Error</h1>
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item active text-white">404</li>
             </ol>
         </div>
